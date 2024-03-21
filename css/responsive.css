@@ -1,0 +1,181 @@
+
+/*========================================
+           HOME PAGE STARAT
+==========================================*/
+
+@media screen and (max-width:900px){
+	.dropdown-menu{
+		border:none;
+		margin-top:-5px;
+	}
+	.dropdown-item{
+		line-height: 20px;
+	}
+	html,body{
+		font-size:8px;
+	}
+	nav .nav-item{
+       display:none;
+	}
+	#btn{
+		opacity:1;
+	}
+	
+	.navbar-brand{
+		width:50px;
+		margin:0px auto;
+	}
+	.icon-title{
+		left:15%;
+	}
+	.agent-overlay-text{
+		padding:70px 30px;
+	}
+   #agent-section .col-lg-4{
+   	margin-bottom: 10px;
+   }
+   
+}
+
+@media screen and (max-width: 750px){
+	.round-img .img-fluid{
+   	max-width:50% !important;
+   }
+   .icon-title{
+		left:20%;
+	}
+	#home-section .carousel-indicators{
+	margin-bottom: 50px;
+	margin-right:-260px;
+    }
+    #testimonial-section .text p{
+    	margin-left:0;
+    }
+    .menu2 ul li a{
+    	margin-bottom:5px;
+    }
+}
+@media screen and (max-width:550px){
+	nav #btn{
+       left:10px;
+	}
+	.carousel-caption h2{
+		font-size:400%;
+	}
+	#home-section .carousel-caption{
+		margin-bottom:100px;
+		margin-left: 0px;
+	}
+	#home-section .carousel-caption button{
+		padding:10px 35px;
+		font-size:130%;
+	}
+	#home-section .carousel-indicators{
+	margin-bottom: 50px;
+	margin-right:0px;
+    }
+}
+@media screen and (max-width: 450px){
+    .icon-title{
+		left:30%;
+	}
+	.navbar-brand {
+		font-size:250%;
+	}
+}
+@media screen and (max-width:350px){
+	.icon-title{
+		left:40%;
+	}
+	nav .fa-search{
+		display:none;
+	}
+	.nav-footer .nav-link{
+		display: none;
+	}
+	.close-btn{
+		left:200px;
+	}
+   .navbar-brand{
+   	margin-left:50px;
+   }
+
+}
+
+/*========================================
+           ABOUT PAGE START
+==========================================*/
+
+@media screen and (max-width:750px){
+		#about-photo-section .about-cart{
+		position: static;
+	}
+	#about-photo-section .cart-box{
+          position: static;
+          margin-top:20px;
+          padding:10px !important;
+	    }
+	    #about-photo-section .about-cart .img-fluid{
+	    	float:none;
+	    	width:100% !important;
+	    }
+}
+/*========================================
+           PROPERTY PAGE STARAT
+==========================================*/
+
+/*========================================
+           BLOG PAGE STARAT
+==========================================*/
+
+
+/*========================================
+   PAGES PAGE STARAT  --- PROPERTY-SINGLE
+==========================================*/
+@media screen and (max-width: 1000px){
+	#property-single-section .carousel-control-next span{
+	    position:absolute;
+	    top:0%;
+	    right:55%;
+	    
+   }
+#property-single-section .carousel-control-prev span{
+	    position:absolute;
+	    top:0%;
+	    right:-450%;
+	    
+  }
+}
+@media screen and (max-width:900px){
+	.property-section-nav .navbar-brand{
+	width:50px;
+	margin:0px auto;
+	margin-left:50px;
+   }
+}
+#btn{
+	left:20px;
+}
+@media screen and (max-width: 550px){
+	#property-desc-section .icon-title{
+		left:25%;
+	}
+}
+@media screen and (max-width: 400px){
+	#property-desc-section .icon-title{
+		left:40%;
+	}
+}
+
+
+/*========================================
+           BLOG-SINGLE PAGE STARAT
+==========================================*/
+@media screen and (max-width: 950px){
+	.com-1{
+		margin-left:0;
+	}
+}
+/*========================================
+           CONTACT PAGE STARAT
+==========================================*/

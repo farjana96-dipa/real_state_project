@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="X-UA-Compatible" content="ie=edge">
+	<title>EstateAgency Template</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- animate -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<!-- style file -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+</head>
+<body>
+	
+<nav class="navbar navbar-expand-md fixed-top navbar-light ">
+	<div class="container">
+		<a href="index.html" class="navbar-brand"><p>Estate<span>Agency<p></span></a>
+
+		<ul class="navbar-nav mx-auto">
+			<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+			<li class="nav-item "><a href="about.html" class="nav-link">About</a></li>
+			<li class="nav-item "><a href="property.html" class="nav-link">Property</a></li>
+			<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+			<li class="nav-item dropdown active"><a href="page.html" class="nav-link dropdown-toggle"
+			data-toggle="dropdown" data-target="#dropmenu">Pages</a>
+            <div class="dropdown-menu" id="dropmenu">
+            	<a href="property-single.html" class="dropdown-item">Property Single</a>
+            	<a href="blog-single.html" class="dropdown-item">Blog Single</a>
+            	<a href="agents-grid.html" class="dropdown-item">Agents Grid</a>
+            	<a href="agents-single.html" class="dropdown-item active">Agents Single</a>
+            	
+            </div>
+		   </li>
+			<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+		</ul>
+		<i class="fa fa-search d-none d-lg-block" onclick="saveMenu()"></i>
+		<i class="fa fa-bars" id="btn" onClick="openMenu()"></i>
+	</div>
+</nav>
+
+<!-- SERACH MENU START HERE -->
+
+<div id="search-menu1" class="menu3 d-none d-md-block" onclick="deleteMenu()">
+	<div class="container">
+		<div class="close-menu" onclick="deleteMenu()">
+			<i class="fa fa-close" ></i>
+		</div>
+		<div class="menu-content p-5">
+			<h2 class="py-5"><span class="menu-span">Sear</span>ch Property</h2>
+        <form action="">
+        	<div class="form-group">
+        		<label>Keyword</label>
+        		<input type="keyword" name="" class="form-control form-control-lg" placeholder="Keyword">
+        	</div>
+        	<div class="form-group">
+        		<div class="row">
+        			<div class="col-lg-6 col-sm-12 pt-4">
+        				<div class="form-group">
+        					<label>Type</label>
+        					<select name="" id="" class="custom-select form-control form-control-lg">
+        						<option selected="">All Type</option>
+        						<option value="1">For Rent</option>
+        						<option value="1">For Sale</option>
+        						<option value="1">Open House</option>
+        					</select>
+        				</div>
+        			</div>
+        			<div class="col-lg-6 col-sm-12 pt-4">
+        				<div class="form-group">
+        					<label>City</label>
+        					<select name="" id="" class="custom-select form-control form-control-lg">
+        						<option selected="">All City</option>
+        						<option value="1">Albarma</option>
+        						<option value="1">Alabama</option>
+        						<option value="1">Arizona</option>
+        						<option value="1">California</option>
+        						<option value="1">Colorado</option>
+        					</select>
+        				</div>
+        			</div>
+        			<div class="col-lg-6 col-sm-12 pt-4">
+        				<div class="form-group">
+        					<label>Bedrooms</label>
+        					<select name="" id="" class="custom-select form-control form-control-lg">
+        						<option selected="">Any</option>
+        						<option value="1">01</option>
+        						<option value="1">02</option>
+        						<option value="1">03</option>
+        						<option value="1">04</option>
+        					</select>
+        				</div>
+        			</div>
+        			<div class="col-lg-6 col-sm-12 pt-4">
+        				<div class="form-group">
+        					<label>Garages</label>
+        					<select name="" id="" class="custom-select form-control form-control-lg">
+        						<option selected="">Any</option>
+        						<option value="1">01</option>
+        						<option value="1">02</option>
+        						<option value="1">03</option>
+        						<option value="1">04</option>
+        					</select>
+        				</div>
+        			</div>
+        			<div class="col-lg-6 col-sm-12 pt-4">
+        				<div class="form-group">
+        					<label>Bathrooms</label>
+        					<select name="" id="" class="custom-select form-control form-control-lg">
+        						<option selected="">Any</option>
+        						<option value="1">01</option>
+        						<option value="1">02</option>
+        						<option value="1">03</option>
+        						<option value="1">04</option>
+        					</select>
+        				</div>
+        			</div>
+        			<div class="col-lg-6 col-sm-12 pt-4">
+        				<div class="form-group">
+        					<label>Min Price</label>
+        					<select name="" id="" class="custom-select form-control form-control-lg">
+        						<option selected="">Unlimite</option>
+        						<option value="1">$50,000</option>
+        						<option value="1">$10,000</option>
+        						<option value="1">$40,0000</option>
+        						<option value="1">$80,0000</option>
+        					</select>
+        				</div>
+        			</div>
+        			<!-- button -->
+        			<div class="col-sm-12">
+        				<button>Send Message</button>
+        			</div>
+        		</div>
+        	</div>
+        </form>
+		</div>
+
+	</div>
+	
+</div>
+<!-- HUMBERGER MENU -->
+<div class="container">
+	<div class="menu2" id="navbar1" onClick="closeMenu()">
+		<div class="close-btn"  onClick="closeMenu()">
+			<i class="fa fa-close"></i>
+		</div>
+		<div class="menu-list">
+			
+		<ul>
+			<li><a href="index.html "  onClick="closeMenu()">Home</a></li>
+			<li><a href="about.html"  onClick="closeMenu()">About</a></li>
+			<li><a href="property.html"  onClick="closeMenu()">Property</a></li>
+			<li><a href="blog.html"  onClick="closeMenu()">Blog</a></li>
+			<li class="dropdown "><a href="page.html" class=" dropdown-toggle"
+			data-toggle="dropdown" data-target="#dropmenu" onClick="closeMenu()">Pages</a>
+            <div class="dropdown-menu" id="dropmenu">
+            	<a href="property-single.html" class="dropdown-item" onClick="closeMenu()">Property Single</a>
+            	<a href="blog-single.html" class="dropdown-item" onClick="closeMenu()">Blog Single</a>
+            	<a href="agents-grid.html" class="dropdown-item" onClick="closeMenu()">Agents Grid</a>
+            	<a href="agents-single.html" class="dropdown-item" onClick="closeMenu()">Agents Single</a>
+            	
+            </div>
+		   </li>
+			<li ><a href="contact.html" >Contact</a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+
+<!-- ABOUT-SECTION START -->
+<section id="about-section" class="my-5">
+	<div class="container ">
+		<div class="about-text clearfix py-5">
+		<h1> Margaret Stone </h1>
+		<p class="grid text-muted d-inline-block">Agent Immobiliari</p>
+
+		<div class="breadcrumb d-inline-block float-right">
+			<a href="index.html" class="breadcrumb-item ">Home</a>
+			<a href="property.html" class="breadcrumb-item ">Agents</a>
+			<a href="property.html" class="breadcrumb-item  active">Margaret Stone</a>
+		
+	</div>
+	</div>
+	
+	</div>
+</section>
+
+<!-- MARGARET SECTION -->
+<section id="margaret-section" class="my-5 pt-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-sm-12 mb-5">
+				<img src="images/agent-7.jpg" alt="image" class="img-fluid">
+			</div>
+			<div class="col-lg-6 col-sm-12 mb-5">
+				<h2>Margaret Stone<br><span class="margarent-span">Escala</span></h2>
+				<p class="pt-5">Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus suscipit tortor eget felis porttitor volutpat. </p>
+				<ul class="list-unstyled pt-5">
+					<li class="mb-4"><b class="mr-3">Phone:</b>(478) 457754</li>
+					<li class="mb-4"><b class="mr-3">Mobile:</b>999 123 456 789</li>
+					<li class="mb-4"><b class="mr-3">Email:</b>agents@example.com</li>
+					<li class="mb-4"><b class="mr-3">Skype:</b>margaret.Es</li>
+					<li class="mb-4"><b class="mr-3">Email:</b> agents@example.com</li>
+				</ul>
+				<div class="flex pt-4">
+					<i class="fa fa-facebook mr-3"></i>
+					<i class="fa fa-twitter mr-3"></i>
+					<i class="fa fa-instagram mr-3"></i>
+					<i class="fa fa-pinterest mr-3"></i>
+					<i class="fa fa-bribbble mr-3"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- PROPERTIES PHOTO SECTION -->
+<section id="properties-photo-section" class="agent-span-head" >
+	<div class="container">
+		<h2 class="d-inline-block"><span class="agent-span">My </span>Properties (6)</h2>
+		<div class="row mt-5 pt-5">
+			<div class="col-sm-12">
+				<div class="grid-option clearfix" >
+					<select class="custom-select float-right d-inline-block">
+						<option selected="">All</option>
+						<option value="1">New to Old</option>
+						<option value="2">For Rent</option>
+						<option value="3">For Sale</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+					
+             <div class="property-item">
+				<div class="property-overlay">
+					<img src="images/property-1.jpg" alt="image-1" class="img-fluid">
+					<div class="overlay1">
+						<div class="overlay-text">
+							<h3>245 Azabu <br>Nishi Park Let</h3>
+							<button>RENT | $ 12.000</button>
+							<a class="btn-link">Click here to view <i class="fa fa-angle-right ml-3"></i></a>
+							</div>
+							<div class="d-flex1">
+							<div class="d-flex flex1">
+								<a href="#" class="mr-3">Area</a>
+								<a href="#" class="mr-3">Beds</a>
+								<a href="#" class="mr-3">Baths</a>
+								<a href="#" class="mr-3">Garages</a>
+							</div>
+							<div class="d-flex flex2">
+								<a href="#" class="mr-5">340m<sup>2</sup></a>
+								<a href="#" class="mr-5">2</a>
+								<a href="#" class="mr-5">4</a>
+								<a href="#" class="mr-5">1</a>
+							</div>
+						</div>
+						</div>
+					
+				
+				
+			</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+					<div class="property-item">
+				<div class="property-overlay">
+					<img src="images/property-2.jpg" alt="image-1" class="img-fluid">
+					<div class="overlay1">
+						<div class="overlay-text">
+							<h3>245 Azabu <br>Nishi Park Let</h3>
+							<button>RENT | $ 12.000</button>
+							<a class="btn-link">Click here to view <i class="fa fa-angle-right ml-3"></i></a>
+							</div>
+							<div class="d-flex1">
+							<div class="d-flex flex1">
+								<a href="#" class="mr-3">Area</a>
+								<a href="#" class="mr-3">Beds</a>
+								<a href="#" class="mr-3">Baths</a>
+								<a href="#" class="mr-3">Garages</a>
+							</div>
+							<div class="d-flex flex2">
+								<a href="#" class="mr-5">340m<sup>2</sup></a>
+								<a href="#" class="mr-5">2</a>
+								<a href="#" class="mr-5">4</a>
+								<a href="#" class="mr-5">1</a>
+							</div>
+						</div>
+						</div>
+					
+				
+				
+			</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+					
+                <div class="property-item">
+				<div class="property-overlay">
+					<img src="images/property-10.jpg" alt="image-1" class="img-fluid">
+					<div class="overlay1">
+						<div class="overlay-text">
+							<h3>245 Azabu <br>Nishi Park Let</h3>
+							<button>RENT | $ 12.000</button>
+							<a class="btn-link">Click here to view <i class="fa fa-angle-right ml-3"></i></a>
+							</div>
+							<div class="d-flex1">
+							<div class="d-flex flex1">
+								<a href="#" class="mr-3">Area</a>
+								<a href="#" class="mr-3">Beds</a>
+								<a href="#" class="mr-3">Baths</a>
+								<a href="#" class="mr-3">Garages</a>
+							</div>
+							<div class="d-flex flex2">
+								<a href="#" class="mr-5">340m<sup>2</sup></a>
+								<a href="#" class="mr-5">2</a>
+								<a href="#" class="mr-5">4</a>
+								<a href="#" class="mr-5">1</a>
+							</div>
+						</div>
+						</div>
+				
+				
+				
+			</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+					
+                   <div class="property-item">
+				<div class="property-overlay">
+					<img src="images/property-7.jpg" alt="image-1" class="img-fluid">
+					<div class="overlay1">
+						<div class="overlay-text">
+							<h3>245 Azabu <br>Nishi Park Let</h3>
+							<button>RENT | $ 12.000</button>
+							<a class="btn-link">Click here to view <i class="fa fa-angle-right ml-3"></i></a>
+							</div>
+							<div class="d-flex1">
+							<div class="d-flex flex1">
+								<a href="#" class="mr-3">Area</a>
+								<a href="#" class="mr-3">Beds</a>
+								<a href="#" class="mr-3">Baths</a>
+								<a href="#" class="mr-3">Garages</a>
+							</div>
+							<div class="d-flex flex2">
+								<a href="#" class="mr-5">340m<sup>2</sup></a>
+								<a href="#" class="mr-5">2</a>
+								<a href="#" class="mr-5">4</a>
+								<a href="#" class="mr-5">1</a>
+							</div>
+						</div>
+						
+				</div>
+				
+			</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+					
+               <div class="property-item">
+				<div class="property-overlay">
+					<img src="images/property-8.jpg" alt="image-1" class="img-fluid">
+					<div class="overlay1">
+						<div class="overlay-text">
+							<h3>245 Azabu <br>Nishi Park Let</h3>
+							<button>RENT | $ 12.000</button>
+							<a class="btn-link">Click here to view <i class="fa fa-angle-right ml-3"></i></a>
+							</div>
+							<div class="d-flex1">
+							<div class="d-flex flex1">
+								<a href="#" class="mr-3">Area</a>
+								<a href="#" class="mr-3">Beds</a>
+								<a href="#" class="mr-3">Baths</a>
+								<a href="#" class="mr-3">Garages</a>
+							</div>
+							<div class="d-flex flex2">
+								<a href="#" class="mr-5">340m<sup>2</sup></a>
+								<a href="#" class="mr-5">2</a>
+								<a href="#" class="mr-5">4</a>
+								<a href="#" class="mr-5">1</a>
+							</div>
+						</div>
+						</div>
+
+					</div>
+				
+				
+			
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+					<div class="property-item">
+                
+				<div class="property-overlay">
+					<img src="images/property-6.jpg" alt="image-1" class="img-fluid">
+					<div class="overlay1">
+						<div class="overlay-text">
+							<h3>245 Azabu <br>Nishi Park Let</h3>
+							<button>RENT | $ 12.000</button>
+							<a class="btn-link">Click here to view <i class="fa fa-angle-right ml-3"></i></a>
+							</div>
+							<div class="d-flex1">
+							<div class="d-flex flex1">
+								<a href="#" class="mr-3">Area</a>
+								<a href="#" class="mr-3">Beds</a>
+								<a href="#" class="mr-3">Baths</a>
+								<a href="#" class="mr-3">Garages</a>
+							</div>
+							<div class="d-flex flex2">
+								<a href="#" class="mr-5">340m<sup>2</sup></a>
+								<a href="#" class="mr-5">2</a>
+								<a href="#" class="mr-5">4</a>
+								<a href="#" class="mr-5">1</a>
+							</div>
+						</div>
+						</div>
+					
+				
+				
+			</div>
+				</div>
+			</div>
+                         <!-- pagination -->
+         <div class="col-sm-12 mt-4">
+      <ul class="pagination justify-content-end">
+	<li class="page-item "><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+	<li class="page-item active"><a class="page-link" href="#">1</a></li>
+	<li class="page-item"><a class="page-link" href="#">2</a></li>
+	<li class="page-item"><a class="page-link" href="#">3</a></li>
+	<li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+   </ul>
+          </div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<!-- FOOTER SECTION -->
+<section id="footer-section" class="my-5 pt-5">
+	<div class="container pt-5">
+		<div class="row pt-5">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<h2>Estate<span>Agency</span></h2>
+				<p>Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis sed aute irure. </p>
+				<p>Phone . contact@example.com</p>
+				<p>Email . +54 356 945234</p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<ul>
+					<h2>The Company</h2>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Site Map</a></li>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Legal</a></li>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Agent Admin</a></li>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Careers</a></li>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Affiliate</a></li>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<ul>
+				<h2>International Sites</h2>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Venezuela</a></li>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">China</a></li>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Hong Kong</a></li>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Argentina</a></li>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Singapore</a></li>
+					<li><i class="fa fa-angle-right mr-3"></i><a href="#">Philippines</a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="nav-footer mx-md-auto pt-3 mr-sm-auto " style="width:400px;">
+		    <ul class="nav ">
+			<li class="nav-item text-md-center"><a class="nav-link mr-3" href="#">Home</a></li>
+			<li class="nav-item text-md-center"><a class="nav-link mr-3" href="#">About</a></li>
+			<li class="nav-item text-md-center"><a class="nav-link mr-3" href="#">Property</a></li>
+			<li class="nav-item text-md-center"><a class="nav-link mr-3" href="#">Blog</a></li>
+			<li class="nav-item text-md-center"><a class="nav-link" href="#">Contact</a></li>
+		</ul>
+	</div>
+	<div class="icon-footer pt-4 mr-sm-auto mx-md-auto text-md-center" style="width:300px;">
+		
+			<i class="fa fa-facebook mr-4"></i>
+			<i class="fa fa-twitter mr-4"></i>
+			<i class="fa fa-instagram mr-4"></i>
+			<i class="fa fa-pinterest mr-4"></i>
+			<i class="fa fa-dribbble"></i>
+
+		
+	</div>
+	</div>
+</section>
+<hr>
+<footer class="py-4 text-center">
+	<p >&copy;Copyright EstateAgency All Rights Reserved.</p>
+	<p>Designed By &nbsp;&nbsp;&nbsp;<a href="">Farjana Akter Dipa</a></p>
+</footer>
+
+	<!-- JS FILE -->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+	<!-- bootstrap file -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- wow file -->
+	<script src="js/wow.min.js"></script>
+	<!-- stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- main file -->
+	<script src="js/main.js"></script>
+</body>
+</html>
